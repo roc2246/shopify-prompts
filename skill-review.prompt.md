@@ -1,1 +1,0 @@
-Audit every Agent Skill for token efficiency and reliable activation. Check single-purpose scope, concise `SKILL.md`, optional-reference use, deterministic scripts, duplication, and overly broad descriptions. Recommend only changes that improve reliability or reduce context use.
