@@ -8,12 +8,21 @@ metadata:
 
 # Focus
 
-Use the shared workflow/output. Evaluate the rendered experience implied by the code. Do not invent visual defects that cannot be established from code/screenshots. Prioritize navigation, product/collection usability, forms, focus/keyboard behavior, mobile layout, and section-composition resilience.
+Evaluate the rendered experience implied by the code. Do not invent visual defects that cannot be established from code/screenshots. Prioritize navigation, product/collection usability, forms, focus/keyboard behavior, mobile layout, and section-composition resilience.
 
 # Workflow
 
-See `.agents/skills/_base/common-workflow.md`.
+1. Resolve the requested scope and outcome; widen it only for a necessary code dependency or behavior reason.
+2. Inspect the target and only nearby files needed to verify behavior.
+3. Load `references/checklist.md` only for deep or exhaustive audits.
+4. For broad UX audits, inspect the relevant templates, sections, snippets, styles, scripts, and supplied screenshots; do not claim visual defects that cannot be established from evidence.
+5. Base findings on inspected code. If implementation is explicitly requested, make the smallest coherent change and preserve unrelated merchant-facing behavior.
+6. Run relevant existing checks after edits when available.
 
 # Output
 
-See `.agents/skills/_base/common-output.md`.
+- Lead with the highest-impact finding or action.
+- Cite exact paths and code areas.
+- Separate defects from optional improvements.
+- Avoid restating standards the code already follows.
+- After edits, list changed files and validation results.

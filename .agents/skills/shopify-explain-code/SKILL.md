@@ -8,12 +8,20 @@ metadata:
 
 # Focus
 
-Use the shared workflow/output, but optimize for teaching rather than auditing. Explain the execution/rendering flow first, then key variables/objects, then any important Shopify-specific behavior. Mention concerns only when material to understanding the code.
+optimize for teaching rather than auditing. Explain the execution/rendering flow first, then key variables/objects, then any important Shopify-specific behavior. Mention concerns only when material to understanding the code.
 
 # Workflow
 
-See `.agents/skills/_base/common-workflow.md`.
+1. Resolve the requested scope and outcome; widen it only for a necessary code dependency or behavior reason.
+2. Inspect the target and only nearby files needed to verify behavior.
+3. Load `references/checklist.md` only when Shopify-specific rendering/editor details need extra guidance.
+4. Explain rendering/execution flow before implementation detail; inspect dependencies only when needed to explain behavior accurately.
+5. Mention defects or improvements only when they materially help understanding.
 
 # Output
 
-See `.agents/skills/_base/common-output.md`.
+- Lead with the highest-impact finding or action.
+- Cite exact paths and code areas.
+- Separate defects from optional improvements.
+- Avoid restating standards the code already follows.
+- After edits, list changed files and validation results.
