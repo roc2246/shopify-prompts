@@ -44,4 +44,8 @@ Use shopify-section-block to refactor sections/featured-collection.liquid. Prese
 Use shopify-scss-review on src/scss. Deep audit; preserve rendered appearance.
 ```
 
+```text
+Use shopify-typescript-best-practices on src/ts. Deep audit; preserve runtime behavior.
+```
+
 For implementation requests, the skill may edit directly when the user explicitly asks for changes. For review-only requests, do not mutate files.
