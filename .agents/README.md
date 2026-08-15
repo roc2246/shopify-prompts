@@ -8,7 +8,7 @@ This directory is the complete reusable AI architecture for Shopify theme projec
 .agents/
 ├── skills/       # Self-contained Agent Skills
 ├── docs/         # Cross-cutting Shopify standards for selective loading
-├── scripts/      # Package/setup tooling
+├── scripts/      # Package/setup and deterministic inventory tooling
 ├── adapters/     # Canonical thin tool-specific router files
 ├── AGENT-SKILLS.md
 ├── project.gitignore
@@ -25,4 +25,10 @@ Some coding agents require router files at repository-specific locations. Run:
 ./.agents/scripts/install-agent-adapters.ps1
 ```
 
-This copies the canonical adapter sources to the locations those tools expect while keeping `.agents/` as the portable source of truth.
+This copies the canonical adapter sources to the locations those tools expect while keeping `.agents/` as the portable source of truth. Existing conflicting files are left untouched and cause the script to stop; pass `-Force` only when replacement is intentional.
+
+For recursive theme audits, use the shared inventory script:
+
+```powershell
+python ./.agents/scripts/inventory.py .
+```

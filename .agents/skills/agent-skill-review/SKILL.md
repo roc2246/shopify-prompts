@@ -20,6 +20,8 @@ Evaluate skills as reusable agent capabilities rather than long prompts. Prefer 
 6. Flag stale paths, missing referenced files, generated artifacts, legacy prompt duplicates, and hidden cross-skill dependencies.
 7. Recommend changes only when they improve reliability, portability, or context efficiency.
 
+For package inventory, run `python ./.agents/scripts/inventory-skills.py .` before making full-coverage claims.
+
 # Output
 
 Lead with structural defects, then skill-specific improvements. Distinguish required fixes from optional optimization. After edits, validate metadata, references, scripts, and stale paths.

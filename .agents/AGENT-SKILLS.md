@@ -7,7 +7,7 @@
 1. Match the request to the narrowest skill using its YAML `name` and `description`.
 2. Load only that skill's `SKILL.md` first.
 3. Load its `references/checklist.md` only when deeper audit guidance is required.
-4. Use `scripts/inventory.py` for recursive completeness claims when the skill provides it.
+4. Use `.agents/scripts/inventory.py` for recursive theme completeness claims and `.agents/scripts/inventory-skills.py` for package completeness claims.
 5. Use `.agents/docs/` only when cross-cutting Shopify/project standards materially affect the task.
 6. Do not preload every skill or documentation file.
 7. Prefer inspected project evidence over generic Shopify advice.

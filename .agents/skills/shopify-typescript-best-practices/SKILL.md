@@ -15,7 +15,7 @@ Inspect source TypeScript before generated JavaScript when both exist. Preserve 
 1. Resolve the requested scope and outcome; widen it only for a necessary code dependency or behavior reason.
 2. Inspect the target and only nearby files needed to verify behavior.
 3. Load `references/checklist.md` only for deep or exhaustive audits.
-4. For recursive audits, use `scripts/inventory.py` when present; do not claim full coverage without deterministic inventory.
+4. For recursive audits, use `.agents/scripts/inventory.py`; do not claim full coverage without deterministic inventory.
 5. Base findings on inspected code. If implementation is explicitly requested, make the smallest coherent change and preserve unrelated merchant-facing behavior.
 6. Run relevant existing checks after edits when available.
 
